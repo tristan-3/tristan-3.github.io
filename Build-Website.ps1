@@ -1,8 +1,10 @@
 $pages = Get-ChildItem -Path $PSScriptRoot/pages -File
 $pandocArgs = @(
+    '--from',
+    'markdown-auto_identifiers',
     '--standalone',
-    '--template=templates/default.html',
-    '--eol=lf')
+    '--template=templates/default.html'
+)
 $partialPath = "$PSScriptRoot/templates/list.html"
 $posts = Get-ChildItem -Path $PSScriptRoot/posts | Sort-Object -Property Name -Descending
 
