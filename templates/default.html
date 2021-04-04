@@ -4,5 +4,9 @@ $head.html()$
 $body$
 $if(index)$$list.html()$$endif$
 </main>
-<!-- <hr> -->
-$footer.html()$
+<hr>
+$if(index)$
+$footer-no-nav.html()$
+$else$
+$footer-nav.html()$
+$endif$
