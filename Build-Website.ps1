@@ -33,7 +33,7 @@ $posts.ForEach{
     pandoc.exe $_.FullName $pandocArgs --output=$PSScriptRoot/docs/$($_.BaseName).html
 }
 
-Add-Content -Path $partialPath -Value '</ul>' -NoNewline
+Add-Content -Path $partialPath -Value '</ul>'
 
 # (Windows PowerShell workaround) Force BOM-less UTF-8 encoding
 [IO.File]::WriteAllLines((Get-Item -Path $partialPath).FullName, (Get-Content -Raw $partialPath))

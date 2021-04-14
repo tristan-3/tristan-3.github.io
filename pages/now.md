@@ -1,9 +1,8 @@
 ---
 title: "Now page"
+date: 04/13/2021 # Don't forget to update this!
 ---
 
-# Right now, I am…
-
-Fussing over this website. Next step is writing my own CSS for it.
+Fussing over this website. Next step is writing some content for it.
 
 (This is a [now page](https://nownownow.com/about))

@@ -1,10 +1,18 @@
 <!doctype html>
 $head.html()$
+<header>
+<h1>$pagetitle$</h1>
+$if(date)$
+<small><time datetime="$date-meta$">$date-meta$</time></small>
+$endif$
+</header>
 <main>
 $body$
-$if(index)$$list.html()$$endif$
+$if(index)$
+<h2>Posts</h2>
+$list.html()$
+$endif$
 </main>
-<hr>
 $if(index)$
 $footer-no-nav.html()$
 $else$
