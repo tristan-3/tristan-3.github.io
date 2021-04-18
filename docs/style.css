@@ -49,7 +49,7 @@ code {
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
 }
 
 header * {
@@ -63,11 +63,11 @@ li + li {
 }
 
 p:first-of-type {
-  margin-top: 2.5rem;
+  margin-top: 2.25rem;
 }
 
 p + p {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 pre code {
