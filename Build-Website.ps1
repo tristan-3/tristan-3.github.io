@@ -24,7 +24,7 @@ $posts = Get-ChildItem -Path $PSScriptRoot/posts | Sort-Object -Property Name -D
 Get-ChildItem -Path $PSScriptRoot/docs -File -ErrorAction Ignore | Remove-Item
 Get-ChildItem -Path $partialPath -ErrorAction Ignore | Remove-Item
 
-Add-Content -Path $partialPath -Value '<ul>'
+Add-Content -Path $partialPath -Value '<ul id=posts>'
 
 $posts.ForEach{
     $title = Select-String -InputObject $_ -Pattern '^title: "(.*?)"$'
